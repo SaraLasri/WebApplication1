@@ -11,7 +11,7 @@ builder.Services.AddScoped<ITasklService, TasklService>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 //builder.Services.AddTransient<>
-
+//hgyughu
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
