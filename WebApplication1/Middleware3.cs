@@ -7,17 +7,21 @@ namespace WebApplication1
     // You may need to install the Microsoft.AspNetCore.Http.Abstractions package into your project
     public class Middleware3
     {
+        private readonly ILogger logger;
         private readonly RequestDelegate _next;
 
-        public Middleware3(RequestDelegate next)
+        public Middleware3(RequestDelegate next , ILogger<Middleware3> logger)
         {
             _next = next;
+            this.logger = logger;
         }
 
-        public Task Invoke(HttpContext httpContext)
+        public async Task Invoke(HttpContext httpContext)
         {
             Console.WriteLine("hello!!!");
-            return _next(httpContext);
+            logger.LogDebug($"next start{httpContext.Request.Path}");
+            await _next(httpContext);
+            await httpContext.Response.WriteAsync(httpContext.Request.Method.ToString());
         }
     }
 
