@@ -16,7 +16,7 @@ namespace WebApplication1
 
         public Task Invoke(HttpContext httpContext)
         {
-            Console.WriteLine("hello!!!");
+            Console.WriteLine("hello !!!!!!!!!");
             return _next(httpContext);
         }
     }
