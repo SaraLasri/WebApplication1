@@ -3,7 +3,7 @@
     public static class AllTasks
     {
         public static List<TaskModel> allTasks = new List<TaskModel>{
-
+        //added tasks
         new TaskModel(1, "fff","Orange", DateTime.Now,Preferance.a),
         new TaskModel(2,"sss","Orange", DateTime.Now,Preferance.a),
         new TaskModel(3, "ggg","Orange", DateTime.Now,Preferance.a),
