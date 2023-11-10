@@ -14,7 +14,8 @@
         new TaskModel(8, "mmm","red", DateTime.Now,Preferance.a),
         new TaskModel(9,"lll","yellow", DateTime.Now,Preferance.a),
         new TaskModel(10, "kkk","pink", DateTime.Now,Preferance.a),
-        new TaskModel(11, "mmm","red", DateTime.Now,Preferance.a)
+        new TaskModel(11, "mmm","red", DateTime.Now,Preferance.a),
+        new TaskModel(12, "mmm","red", DateTime.Now,Preferance.a)
         };
     }
 }
